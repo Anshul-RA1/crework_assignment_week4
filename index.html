@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login and Signup Page</title>
+</head>
+<body>
+<div class="container">
+  <div class="middleFormContainer">
+    <div class="actionBtns">
+      <button class="actionBtn signUpBtn">Signup</button>
+      <button class="actionBtn loginBtn">Login</button>
+      <button class="moveBtn">Signup</button>
+    </div>
+    <div class="userForm">
+
+      <!-- Signup form -->
+
+      <form onsubmit="return validate_signUp()" action=""  class="form Signup signUpForm">
+       <div class="inputGroup">
+        <input type="text" placeholder="First Name" id="fName">
+       </div>
+       <div class="inputGroup">
+        <input type="text" placeholder="Last Name" id="lName" >
+       </div>
+       <div class="inputGroup">
+        <input id="Email" type="email" placeholder="Enter your Email" required>
+       </div>
+       <div class="inputGroup">
+        <input type="password" placeholder="Enter your password" id="pwd">
+       </div>
+       <div class="inputGroup">
+        <input type="password" placeholder="Confirm your password" id="cpwd">
+       </div>
+      <button type="submit" class="submitBtn">Signup</button>
+      </form>
+
+      <!-- login form -->
+
+      <form onsubmit="return validate_login()" action="" class="form login loginForm">
+        
+        <div class="inputGroup">
+         <input type="email" placeholder="Enter your Email" id="login_Email" required>
+        </div>
+        <div class="inputGroup">
+         <input type="password" placeholder="Enter your password" id="login_pwd" >
+        </div>
+        <button type="submit" class="submitBtn">Login</button>
+       </form>
+    </div>
+  </div>
+  
+</div>
+<script src="index.js"></script>
+</body>
+</html>

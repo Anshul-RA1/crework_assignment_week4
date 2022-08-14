@@ -1,0 +1,143 @@
+ @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap"); 
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "PT Serif", sans-serif;
+  box-sizing: border-box;
+
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #F2EBE9; */
+  background-image: url('Images/Mario_BG_1.jpg');
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  /* background-size: cover; */
+  
+
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middleFormContainer{
+  width: 400px;
+  height: 90vh;
+  background-color: #E2DCC8;
+  border-radius: 50px;
+  box-shadow: 4px 4px 4px #0096FF ,  4px 4px 4px #0096FF;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.actionBtns {
+  width: 80%;
+  background-color: #1F4690;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: #7F8487 3px 6px 12px;
+}
+
+.actionBtn{
+  padding: 1em;
+  width: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-readius: 50px;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.moveBtn{
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  margin: 2px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+  transform: translateX(0);
+  transition: all 0.2s ease-in -out;
+
+}
+
+.rightBtn{
+  transform: translateX(98%);
+  transition: all 0.3s ease-in -out;
+}
+
+.inputGroup {
+  width: 300px;
+  margin: 0.8em 0;  background-color: rbb(245, 245, 245);
+  border-radius: 50px;
+  box-shadow: 2px 4px 6px #1F4690 ,  2px 4px 6px #1F4690;
+  font-weight: bolder;
+  font-family: PT Serif;
+  font-size: 20px;
+}
+
+.inputGroup input{
+  width: 100%;
+  padding: 1em 1.5em;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+ 
+}
+
+.inputGroup input:focus{
+ outline: none;
+ border: none;
+ border-radius: 50px;
+
+  
+}
+
+.submitBtn {
+  width: 150px;
+  padding: 1em;
+  margin: 2em 0;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: white;
+  box-shadow: 3px 6px 8px #1F4690 ,  3px 6px 8px #1F4690;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+  background-color: #1F4690;
+  color: white;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.form {
+  display: none;
+}
+
+.signUpForm{
+  display: block;
+}
+
+.loginForm {
+  display:none;
+}
